@@ -1,20 +1,21 @@
 let React = require('react');
 
-let Graph = require('reactchart');
-let vm = require('./vm.js');
+let examples = require('./examples.jsx');
+let graphVM = require('./vm.js');
 
+class LabGraph extends React.Component {
 
-class Test extends React.Component {
+	componentWillMount(){
+		this.VM = graphVM.create(() => this.VM);
+	}
 
-  render(){
-    return <div>
-      <Graph {...vm.plain}/>
-      <Graph {...vm.fill}/>
-      <button className='btn btn-primary' onClick={vm.launch}>Play</button>
-      <Graph {...vm.dyn}/>
-    </div>;
-  }
-
+	render(){
+    let state = this.VM;
+		return <div>
+			<h1>On recommence</h1>
+			{examples.render(state)}
+		</div>;
+	}
 }
 
-module.exports = Test;
+module.exports = LabGraph;

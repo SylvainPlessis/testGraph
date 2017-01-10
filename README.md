@@ -1,20 +1,22 @@
 #### Testing react chart
 
-Testing [this](https://github.com/fundkis/reactchart)
+Testing [Fund KIS React Chart](https://github.com/fundkis/reactchart)
 
-To download:
-
-```git clone git@github.com/SylvainPlessis/testGraph.git```
+This is the same thing that [the library github page](https://fundkis.github.io/reactchart)
+except that we use here the library instead of the sources.
 
 ### Either see it locally
 ```
+git clone git@github.com/SylvainPlessis/testGraph.git
 cd testGraph
 npm install
 ./node_modules/.bin/http-server
 ```
 
-You can play in the ```src``` folder, ```Test.jsx``` prints
-the charts. Regulp the ```test.js``` file before refreshing:
+You can play in the ```src``` folder, ```example.jsx``` is
+the one actually printing the charts, and all the props
+are defined in the ```vm.js``` file.
+You need to regulp the ```test.js``` file before refreshing:
 ```
 gulp
 ```
