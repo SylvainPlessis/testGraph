@@ -7,7 +7,7 @@ except that we use here the library instead of the sources.
 
 ### Either see it locally
 ```
-git clone git@github.com/SylvainPlessis/testGraph.git
+git clone git@github.com:SylvainPlessis/testGraph.git
 cd testGraph
 npm install
 ./node_modules/.bin/http-server
