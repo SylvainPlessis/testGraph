@@ -18,9 +18,7 @@ gulp.task('page-js', function(){
   var headerTxt = '/* ' + new Date().getFullYear() + '- generated at ' + new Date() + '\n*/';
   var browserifyOption = {
 	    entries: './src/test.js',
-	    extensions: ['.js'],
-      NODE_ENV: 'production'
-	    //debug: true,
+	    extensions: ['.js','.jsx']
 	  };
 	
 	  var b = browserify(browserifyOption);

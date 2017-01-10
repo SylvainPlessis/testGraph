@@ -10,6 +10,8 @@ class Test extends React.Component {
     return <div>
       <Graph {...vm.plain}/>
       <Graph {...vm.fill}/>
+      <button className='btn btn-primary' onClick={vm.launch}>Play</button>
+      <Graph {...vm.dyn}/>
     </div>;
   }
 
