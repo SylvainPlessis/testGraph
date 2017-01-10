@@ -27,4 +27,4 @@ Then open a web browser and look up ```localhost:8080```
 
 ### Or see it online
 
-[here](SylvainPlessis.github.io/testGraph)
+[here](https://SylvainPlessis.github.io/testGraph)
